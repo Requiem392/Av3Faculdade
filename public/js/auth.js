@@ -29,7 +29,7 @@ function cadastrar(event) {
 
     if (existe) {
         // Se achou, trava o cadastro e avisa
-        alert("Esse e-mail já tá cadastrado, mano!");
+        alert("Este e-mail já está cadastrado no sistema.");
         return; // Mata a função aqui pra não salvar duplicado
     }
     
@@ -41,7 +41,7 @@ function cadastrar(event) {
     // porque o LocalStorage só guarda String.
     localStorage.setItem('usuariosDB', JSON.stringify(listaUsuarios));
     
-    alert("Cadastro feito com sucesso! Bora pro login.");
+    alert("Cadastro realizado com sucesso!");
     
     // Manda o usuário pra página de login
     window.location.href = "login.html";
@@ -92,7 +92,7 @@ function verificarLogin() {
         // Tudo certo, injeta o nome do cara junto com o botão de sair.
         var btnSair = document.getElementById('bem-vindo');
         if(btnSair) {
-            btnSair.innerHTML = "Eae, " + usuario + "! <button onclick='sair()' class='btn btn-sm btn-danger ms-2'>Sair</button>";
+            btnSair.innerHTML = "Olá, " + usuario + "! <button onclick='sair()' class='btn btn-sm btn-danger ms-2'>Sair</button>";
         }
     }
 }
