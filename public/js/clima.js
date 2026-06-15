@@ -11,7 +11,7 @@ function buscarClima() {
     var latitude;
     var longitude;
 
-    // Um blocão de IF / ELSE bem de iniciante para descobrir as coordenadas da cidade escolhida
+    // Verificando qual cidade foi escolhida para definirmos as coordenadas exatas do mapa
     if (cidade == "fortaleza") {
         nomeCidade = "Fortaleza";
         latitude = -3.73;
